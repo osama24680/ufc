@@ -1,0 +1,1602 @@
+body{
+    height:500vh;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:none;
+}
+.active_navbar{
+    color:red;
+}
+.mynavbar .events a ul li{
+    color:palegoldenrod;
+    background-color:green
+}
+/* **************************************************************1-slider*********************************************************************** */
+
+.slider{
+    background-image: url("../images/slider.PNG");
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-blend-mode: overlay;
+    position: relative;
+}
+.mynavbar{
+    width:85%;
+    height: 70px;
+    background-color: #fff;
+    margin:auto;
+    padding:0px 20px;
+    transform: translate(0,60px);
+    transition: all 1s;
+    z-index: 5;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    grid-gap:30px ;
+    justify-items: center;
+    align-items: center;
+}
+.ufc2 {
+    justify-self: center;
+    align-self: center;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.slider .mynavbar {
+    list-style: none;
+    
+    
+}
+.slider .mynavbar li{
+    position:relative;
+    height:100%;
+    line-height: 70px;
+    
+}
+.slider .mynavbar li a{
+    text-decoration: none;
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.slider .mynavbar li a:hover{
+    color:red;
+}
+.slider .mynavbar  ul{
+    position:absolute;
+    top:70px;
+    right:20px;
+    display:none;
+    opacity:.7;
+    padding: 0;
+}
+.slider .mynavbar ul li{
+    background-color:#eeeeef;
+    color:#000;
+    border-bottom: 3px #585b63 solid;
+    width:170%;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 120%;
+    padding:20px 0
+}
+.slider .mynavbar li:hover  ul{
+    display:block;
+}
+
+@media(max-width:880px){
+    .slider .mynavbar {
+        display:none;
+    }
+}
+
+
+
+
+.sticky_navbar{
+    visibility: hidden;
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 70px;
+    background-color: #000;
+    margin:auto;
+    padding:0px 20px;
+    transition: all 1s;
+    z-index: 50;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    grid-gap:30px ;
+    justify-items: center;
+    align-items: center;
+    list-style:none
+}
+
+.sticky_navbar li{
+    position:relative;
+    height:100%;
+    line-height: 70px;
+}
+
+.sticky_navbar li a{
+    text-decoration: none;
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sticky_navbar  ul{
+    position:absolute;
+    top:70px;
+    right:20px;
+    display:none;
+    opacity:.7;
+    padding: 0;
+}
+.sticky_navbar ul li{
+    background-color:#eeeeef;
+    color:#000;
+    border-bottom: 3px #585b63 solid;
+    width:170%;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 120%;
+    padding:20px 0;
+    list-style: none;
+}
+.sticky_navbar li:hover  ul{
+    display:block;
+}
+
+
+
+
+
+
+
+.slider .side_navbar{
+    display:none;
+    background-color:#fff;
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:70px;
+    z-index:1;
+    list-style: none;
+    text-align: center;
+    padding-top:80px;
+  }
+  .slider .side_navbar li{
+      margin:20px 0;
+      
+  }
+  .slider .side_navbar li a{
+      color:#000;
+      text-decoration:none;
+  
+  }
+  .slider .side_navbar ul{
+      list-style:none;
+      /* padding-top:50px; */
+      display:none;
+      
+      
+  }
+  .slider .side_navbar ul li{
+      margin:10px 0 0 10px ;
+      
+  
+  }
+  .slider .side_navbar ul li a{
+      color:#585b63;
+      
+      margin:auto
+  }
+  .slider .side_navbar li:hover ul{
+      display:block;
+  }
+
+  .sm_screen{
+    display:none;
+    width:100%;
+  
+    background-color:#fff;
+    position: fixed;
+    top:0px;
+    z-index: 3;
+    
+}
+
+
+
+
+
+  @media(max-width:880px){
+    
+      .slider  .sm_screen{
+        width:100% !important;
+        display:block;
+        display:flex;
+        justify-content:space-between;
+        padding: 0 20px;
+        align-items: center;
+    }
+    .slider  .sm_screen h2{
+        font-size:55px;
+        font-family: 'Zen Tokyo Zoo', cursive;
+        font-style: italic;
+    }
+    .slider .sm_screen h2:hover{
+        color:red;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .slider  .sm_screen .menu_icon{
+        border:solid 4px black;
+        border-radius: 8px;
+        font-size: 35px;
+        padding:5px;
+    }
+    .slider .sm_screen .menu_icon:hover{
+        cursor: pointer;
+        color:red;
+        transition: all .3s;
+    }
+    .slider  .sm_screen .close_icon{
+        border:solid 4px black;
+        border-radius: 8px;
+        font-size: 35px;
+        padding:5px;
+        display:none;
+    }
+    .slider .sm_screen .close_icon:hover{
+        cursor: pointer;
+        color:red;
+        transition: all .3s;
+    }
+    
+  }
+
+
+
+
+
+
+.slider .content_slider h3{
+    color:#fff;
+    text-align:center;
+    transform: translate(0,250px);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    user-select: none;
+}
+.slider .content_slider h2{
+    color:#fff;
+    text-align:center;
+    transform: translate(0,240px);
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--bs-font-sans-serif);
+    user-select: none;
+}
+.slider .content_slider h4{
+    color:#fff;
+    text-align:center;
+    transform: translate(0,245px);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: var(--bs-font-sans-serif);
+    user-select: none;
+}
+.slider .content_slider button{
+    background-color:#fff;
+    text-align:center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--bs-font-sans-serif);
+    user-select: none;
+    position:absolute;
+    top:500px;
+    left:43%;
+    border:none;
+    padding:20px;
+    background: linear-gradient(to left, #fff 50%, #000 50%) right;
+    background-size:200%;
+    transition: .3s ease-out;
+    z-index:0
+}
+.slider .content_slider button:hover{
+    color: #fff;
+    border:solid #fff 1px;
+    background-position: left;
+}
+/* -------------------------------------------------------medaia query-------------------------------------------------------- */
+@media(max-width:1230px){
+    .mynavbar {
+        width:100%; 
+    }
+}
+@media(max-width:992px){
+    .mynavbar{
+        position:fixed;
+        z-index: 1;
+    }
+    .mynavbar p{
+        display:none;
+    }
+    .mynavbar{
+        transform: translate(0,0);
+    }
+    .sticky_navbar{
+        display:none;
+    }
+    
+  
+}
+@media(max-width:576px){
+    .slider .content_slider h3{
+        font-size: 15px;
+    }
+    .slider .content_slider h2{
+        font-size: 33px;
+        transform: translate(0,250px);
+    }
+    .slider .content_slider h4{
+        transform: translate(0,250px);
+        font-size: 19px;
+    }
+    .slider .content_slider button{
+        top:420px;
+        left:31%;
+    }
+}
+
+@media(min-width:576px)and (max-width:767px){
+    .slider .content_slider h3{
+        font-size: 17px;
+    }
+    .slider .content_slider h2{
+        font-size: 37px;
+        transform: translate(0,250px);
+    }
+    .slider .content_slider h4{
+        transform: translate(0,250px);
+        font-size: 22px;
+    }
+    .slider .content_slider button{
+        top:420px;
+        left:39%;
+    }
+}
+@media(min-width:767px)and (max-width:992px){
+    .slider .content_slider h3{
+        font-size: 19px;
+    }
+    .slider .content_slider h2{
+        font-size: 40px;
+        transform: translate(0,250px);
+    }
+    .slider .content_slider h4{
+        transform: translate(0,250px);
+        font-size: 25px;
+    }
+    .slider .content_slider button{
+        top:420px;
+        left:41%;
+    }
+}
+@media(min-width:992px)and (max-width:1200px){
+    .slider .content_slider h3{
+        font-size: 22px;
+    }
+    .slider .content_slider h2{
+        font-size: 45px;
+        transform: translate(0,250px);
+    }
+    .slider .content_slider h4{
+        transform: translate(0,250px);
+        font-size: 27px;
+    }
+    .slider .content_slider button{
+        top:500px;
+        left:43%;
+    }
+}
+
+/* **************************************************************2-fight_banner*********************************************************************** */
+.fight_banner{
+    width:100%;
+    background-color: #fff;
+    display:flex;
+}
+.fight_banner .fight{
+    width:50%;
+    display:flex;
+}
+.fight_banner .fight:nth-child(1){
+    margin-left:300px
+}
+.fight_banner .fight .content{
+    align-self: center;
+}
+.fight_banner .fight .content p{
+    text-transform: uppercase;
+}
+.fight_banner .fight .content p:nth-child(1){
+    color:#B8B9BD;
+    font-size: 11px;
+    font-weight: bold;
+}
+.fight_banner .fight .content p:nth-child(2){
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.fight_banner .fight .content span{
+    margin-left: 30px;;
+}
+.fight_banner .fight img:nth-child(1){
+    width:150px;
+    height:150px;
+    margin-left:50px;
+    border-radius: 5px;
+}
+.xyz{
+    margin-left: 50px;
+}
+/* ---------------------------------------------------------media query---------------------------------------------------------*/
+@media(max-width:576px){
+    .fight_banner{
+        flex-direction:column;
+        
+    }
+    .fight_banner .fight:nth-child(1){
+        margin-left:50px
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .fight_banner{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fight_banner .fight:nth-child(1){
+        margin-left:90px;
+      
+    }
+}
+@media(min-width:767px) and (max-width:992px){
+    .fight_banner{
+        justify-content: center;
+        align-items: center;
+    }
+    .fight_banner .fight:nth-child(1){
+        margin-left:90px;
+      
+    }
+}
+/* **************************************************************2-interviewes*********************************************************************** */
+.container{
+    width:85%;
+    margin:auto;
+}
+.interviewes{
+
+     position: relative;
+     display:flex;
+     flex-wrap:wrap;
+}
+.interviewes div {
+    width:25%;
+    /* margin-top: 50px;; */
+   
+}
+
+.first_video{
+    height:50%;
+}
+
+.interview_first_video h4{
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 40px 10px 40px;
+}
+.interview_first_video p{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    padding:0 40px 0 40px;
+    line-height: 1;
+    width:300px;
+}
+.hall1{
+    margin-left:25px;
+   
+}
+.ATHLETES h4{
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 40px 10px 40px;
+}
+.ATHLETES p{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    padding:0 40px 0 40px;
+    line-height: 1;
+    width:300px;
+}
+.strickland{
+    width:50% !important;
+    height: 700px !important;
+    margin-top: 50px;
+    position: relative;
+}
+.strickland_ATHLETES{
+    position:absolute;
+    top:15px;
+    left:20px;
+    color:#fff;
+    font-weight: bold;
+}
+.strickland h1{
+    position:absolute;
+    bottom:95px;
+    left:20px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 45px;
+}
+.strickland .strickland_Heading {
+    position:absolute;
+    bottom:35px;
+    left:20px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+.strickland .strickland_READ {
+    position:absolute;
+    bottom:5px;
+    left:20px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+.hall2{
+    height: 300px !important;
+    align-self: flex-end;
+    margin-left: 25px;
+}
+
+.FIGHT_COVERAGE{
+    width:200px !important;
+    height:305px !important;
+    align-self: flex-end;
+    transform: translateY(50px);
+    
+}
+.FIGHT_COVERAGE h4{
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding:70px 0 30px 0;
+}
+.FIGHT_COVERAGE p{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+}
+.interviewes img{
+    width:100%;
+    height: 100%;
+    
+}
+.interviewes video{
+    width:100%;
+    height: 100%;
+    border:none;
+    outline: none;
+}
+.second_interviewes{
+    display:flex;
+    justify-content:flex-end;
+    margin-top: 450px;
+
+}
+.second_interviewes div{
+    width:25%;
+    margin-left: 25px;;
+}
+.second_interviewes .img_box{
+    width:350px;
+    height:200px;
+}
+.second_interviewes .img_box img{
+    width:100%;
+    height:100%;
+}
+.second_interviewes .img_box .MELSIK_text{
+    width:auto;
+    height:auto;
+}
+
+.second_interviewes .text_box h3{
+    padding:20px 0;
+    font-size:1.25rem;
+    font-weight:bold;
+    color:#000;
+}
+.second_interviewes .text_box p{
+    padding:40px 0;
+    color:#585b63
+}
+
+.second_interviewes .text_box button{
+    background-color:transparent;
+    text-align:center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--bs-font-sans-serif);
+    user-select: none;
+    color:#fff;
+    border:solid #000 1px;
+    padding:20px 30px;
+    background: linear-gradient(to left, #000 50%, #fff 50%) right;
+    background-size:200%;
+    transition: .3s ease-out;
+    z-index:0
+}
+.second_interviewes .text_box button:hover{
+    color: #000;
+    
+    background-position: left;
+}
+
+
+.second_interviewes .img_box h4{
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 30px 40px 10px 40px;
+}
+.second_interviewes .img_box p{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    padding:0 40px 0 40px;
+    line-height: 1;
+    width:100%;
+}
+
+
+@media (max-width:576px){
+    .interviewes{
+        flex-direction: column;
+    }
+    .interviewes div{
+        width:100%;
+    }
+    .interview_first_video{
+        box-shadow: 5px 10px 18px #888888;
+        padding:20px;
+        margin-top:-10px;
+    }
+    .hall1{
+        margin-left:0px;
+        margin-top:40px;
+    }
+    .ATHLETES{
+        height: auto !important;
+    }
+    .strickland{
+        width:100% !important;
+        height: 400px !important;
+        margin-top: 0px;
+        
+    }
+    .strickland_ATHLETES{
+        top:15px;
+        font-size: 12px;
+    }
+    .strickland h1{
+        bottom:95px;
+        font-size: 25px;
+    }
+    .strickland .strickland_Heading {
+        bottom:20px;
+        font-size: 12px;
+    }
+    .strickland .strickland_READ {
+        bottom:0px;
+        font-size: 9px;
+    }
+    .hall2{
+        height: auto !important;
+        margin-left: 0px;
+        margin-top:40px;
+    }
+    .FIGHT_COVERAGE{
+        width:100% !important;
+        height:auto !important;
+        align-self: flex-end;
+    }
+    .second_interviewes{
+
+        flex-direction: column;
+        margin-top:0;
+    }
+    .second_interviewes div{
+        width:100%;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .second_interviewes .img_box div{
+        margin-top: -20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:576px) and (max-width:776px){
+    .interviewes{
+        flex-direction: column;
+    }
+    .interviewes div{
+        width:100%;
+    }
+    .interview_first_video{
+        box-shadow: 5px 10px 18px #888888;
+        padding:20px;
+        margin-top:-10px;
+    }
+    .hall1{
+        margin-left:0px;
+        margin-top:40px;
+    }
+    .ATHLETES{
+        height: auto !important;
+    }
+    .strickland{
+        width:100% !important;
+        height: 400px !important;
+        margin-top: 0px;
+        
+    }
+    .strickland_ATHLETES{
+        top:15px;
+        font-size: 14px;
+    }
+    .strickland h1{
+        bottom:95px;
+        font-size: 30px;
+    }
+    .strickland .strickland_Heading {
+        bottom:20px;
+        font-size: 15px;
+    }
+    .strickland .strickland_READ {
+        bottom:0px;
+        font-size: 11px;
+    }
+    .hall2{
+        height: auto !important;
+        margin-left: 0px;
+        margin-top:40px;
+    }
+    .FIGHT_COVERAGE{
+        width:100% !important;
+        height:auto !important;
+        align-self: flex-end;
+    }
+    .second_interviewes{
+
+        flex-direction: column;
+        margin-top:0;
+    }
+    .second_interviewes .img_box {
+        width: auto !important;
+        height: auto !important;
+    }
+    .second_interviewes div{
+        width:100%;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .second_interviewes .img_box div{
+        margin-top: -20px;
+    }
+}
+
+
+
+
+
+
+@media (min-width:776px) and (max-width:992px){
+    .interviewes{
+        flex-direction: column;
+    }
+    .interviewes div{
+        width:100%;
+    }
+    .interview_first_video{
+        box-shadow: 5px 10px 18px #888888;
+        padding:20px;
+        margin-top:-10px;
+    }
+    .hall1{
+        margin-left:0px;
+        margin-top:40px;
+    }
+    .ATHLETES{
+        height: auto !important;
+    }
+    .strickland{
+        width:100% !important;
+        height: 400px !important;
+        margin-top: 0px;
+        
+    }
+    .strickland_ATHLETES{
+        top:15px;
+        font-size: 14px;
+    }
+    .strickland h1{
+        bottom:95px;
+        font-size: 30px;
+    }
+    .strickland .strickland_Heading {
+        bottom:20px;
+        font-size: 15px;
+    }
+    .strickland .strickland_READ {
+        bottom:0px;
+        font-size: 11px;
+    }
+    .hall2{
+        height: auto !important;
+        margin-left: 0px;
+        margin-top:40px;
+    }
+    .FIGHT_COVERAGE{
+        width:100% !important;
+        height:auto !important;
+        align-self: flex-end;
+    }
+    .second_interviewes{
+
+        flex-direction: column;
+        margin-top:0;
+    }
+    .second_interviewes .img_box {
+        width: auto !important;
+        height: auto !important;
+    }
+    .second_interviewes div{
+        width:100%;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .second_interviewes .img_box div{
+        margin-top: -20px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width:992px) and (max-width:1200px){
+    .interviewes{
+        flex-direction: column;
+    }
+    .interviewes div{
+        width:100%;
+    }
+    .interview_first_video{
+        box-shadow: 5px 10px 18px #888888;
+        padding:20px;
+        margin-top:-10px;
+    }
+    .hall1{
+        margin-left:0px;
+        margin-top:40px;
+    }
+    .ATHLETES{
+        height: auto !important;
+    }
+    .strickland{
+        width:100% !important;
+        height: 400px !important;
+        margin-top: 0px;
+        
+    }
+    .strickland_ATHLETES{
+        top:15px;
+        font-size: 14px;
+    }
+    .strickland h1{
+        bottom:95px;
+        font-size: 30px;
+    }
+    .strickland .strickland_Heading {
+        bottom:20px;
+        font-size: 15px;
+    }
+    .strickland .strickland_READ {
+        bottom:0px;
+        font-size: 11px;
+    }
+    .hall2{
+        height: auto !important;
+        margin-left: 0px;
+        margin-top:40px;
+    }
+    .FIGHT_COVERAGE{
+        width:100% !important;
+        height:auto !important;
+        align-self: flex-end;
+    }
+    .second_interviewes{
+
+        flex-direction: column;
+        margin-top:0;
+    }
+    .second_interviewes .img_box {
+        width: auto !important;
+        height: auto !important;
+    }
+    .second_interviewes div{
+        width:100%;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .second_interviewes .img_box div{
+        margin-top: -20px;
+    }
+}
+
+
+/* ***************************************************************************4-ufc_background************************************************************** */
+.ufc_background{
+    background-image: url("../images/ufc_background.jpg");
+    width:100%;
+    /* height:100vh; */
+    background-size:cover;
+    background-blend-mode: overlay;
+    position: relative;
+    margin-top:100px;
+}
+.ufc_background .ufc_background_content{
+    padding:15% 0;
+}
+.ufc_background h1{
+    text-align: center;
+    color:#fff;
+    font-size:50px;
+    font-weight: bold;
+    
+}
+.ufc_background h3{
+    text-align: center;
+    color:#fff;
+    font-size:20px;
+    font-weight: bold;
+   
+}
+.ufc_background .mybuttons{
+    text-align: center;
+}
+.ufc_background  button{
+    background-color:#fff;
+    text-align:center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--bs-font-sans-serif);
+    user-select: none;
+    border:none;
+    padding:20px;
+    background: linear-gradient(to left, #fff 50%, transparent 50%) right;
+    background-size:200%;
+    transition: .3s ease-out;
+    z-index:0;
+    margin-left: 20px;;
+    margin-top: 40px;;
+   
+}
+.ufc_background  button:hover{
+    color: #fff;
+    border:solid #fff 1px;
+    background-position: left;
+    
+}
+
+@media (max-width:576px){
+    .ufc_background{
+        margin-top:250px;
+    }
+    .ufc_background .ufc_background_content{
+        padding:20% 0;
+        width:90%;
+        margin:auto;
+    }
+    .ufc_background h1{
+        font-size:20px;
+    }
+    .ufc_background h3{
+        font-size:17px;
+    }
+
+}
+
+
+
+@media (min-width:576px) and (max-width:776px){
+    .ufc_background{
+        margin-top:250px;
+    }
+    .ufc_background .ufc_background_content{
+        padding:20% 0;
+        width:90%;
+        margin:auto;
+    }
+    .ufc_background h1{
+        font-size:25px;
+    }
+    .ufc_background h3{
+        font-size:20px;
+    }
+ 
+}
+
+
+@media (min-width:776px) and (max-width:992px){
+    .ufc_background{
+        margin-top:250px;
+    }
+    .ufc_background .ufc_background_content{
+        padding:20% 0;
+        width:90%;
+        margin:auto;
+    }
+    .ufc_background h1{
+        font-size:35px;
+    }
+    .ufc_background h3{
+        font-size:23px;
+    }
+ 
+}
+
+
+/* ***************************************************************************5-second_fights************************************************************** */
+
+
+.second_fights{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 40px;;
+}
+
+.second_fights video,.second_fights img{
+    width:100%;
+    height: 100%;
+    border:none;
+    outline:none;
+    object-fit: cover
+}
+.second_fights div{
+    width:25%;
+    height: 300px;
+    margin-left: 20px;;
+}
+.second_fights .highlights h4{
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 40px 40px 70px 40px;
+}
+.second_fights .highlights p{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    padding:0 40px 0 40px;
+    line-height: .9;
+    width:300px;
+}
+.second_fights div:nth-of-type(3) video{
+    height:60% !important;
+}
+.second_fights .second_INTERVIEW h4{
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 40px 10px 40px;
+}
+.second_fights .second_INTERVIEW  p{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    padding:0 40px 0 40px;
+    line-height: .9;
+    width:300px;
+}
+.second_fights div:nth-of-type(4) video{
+    height:60% !important;
+}
+.second_fights .third_INTERVIEW h4{
+    color:red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 40px 10px 10px;
+}
+.second_fights .third_INTERVIEW  p{
+    color:#000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    padding:0 20px 0 7px;
+    line-height: .9;
+    width:300px;
+}
+.second_fights div:nth-of-type(5) {
+    position:relative;
+   
+}
+.second_fights div:nth-of-type(5) h4{
+    position: absolute;
+    top:20px;
+    left:20px;
+    color:#fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.second_fights div:nth-of-type(5) h2{
+    position: absolute;
+    bottom:80px;
+    left:20px;
+    color:#fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.view_more{
+    background-color:#000;
+    text-align:center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--bs-font-sans-serif);
+    user-select: none;
+    color:#fff;
+    border:none;
+    padding:20px 40px;
+    background: linear-gradient(to left, #000 50%, #f2f2f2 50%) right;
+    background-size:200%;
+    transition: .3s ease-out;
+    z-index:0;
+    
+}
+.view_more:hover{
+    color: #000;
+    border:solid #000 1px;
+    background-position: left;
+}
+.btn_view_more{
+    text-align: center;
+    margin-top:100px;
+}
+
+@media(max-width:576px){
+    .second_fights{
+        flex-direction: column;
+    }
+    .second_fights div{
+        width:100%;
+        height: auto !important;
+        margin-left: 0px;;
+        margin-top: 25px;;
+    }
+
+    .second_fights .second_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .second_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .second_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+    .second_fights .third_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .third_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .third_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+
+    .second_fights div:nth-of-type(5) h2{
+        font-size: 20px;
+    }
+}
+@media(min-width:576px) and (max-width:776px){
+    .second_fights{
+        flex-direction: column;
+    }
+    .second_fights div{
+        width:100%;
+        margin-left: 0px;;
+        margin-top: 25px;;
+        height: auto !important;
+    }
+
+    .second_fights .second_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .second_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .second_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+    .second_fights .third_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .third_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .third_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+    .second_fights div:nth-of-type(5) h2{
+        font-size: 22px;
+    }
+}
+@media(min-width:776px) and (max-width:992px){
+    .second_fights{
+        flex-direction: column;
+    }
+    .second_fights div{
+        width:100%;
+        margin-left: 0px;;
+        margin-top: 25px;;
+        height: auto !important;
+    }
+
+    .second_fights .second_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .second_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .second_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+    .second_fights .third_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .third_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .third_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+    .second_fights div:nth-of-type(5) h2{
+        font-size: 25px;
+    }
+}
+@media(min-width:992px) and (max-width:1200px){
+    .second_fights{
+        flex-direction: column;
+    }
+    .second_fights div{
+        width:100%;
+        margin-left: 0px;;
+        margin-top: 25px;;
+        height: auto !important;
+    }
+    .second_fights .second_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .second_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .second_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+    .second_fights .third_INTERVIEW{
+        margin-top:0;
+    }
+    .second_fights .third_INTERVIEW h4{
+        padding: 10px 40px 10px 10px;
+    }
+    .second_fights .third_INTERVIEW  p{
+        padding:0 0px 0 10px;
+    }
+    .second_fights div:nth-of-type(5) h2{
+        font-size: 27px;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+    .second_fights div:nth-of-type(5) h2{
+        font-size: 27px;
+    }
+    .second_fights .third_INTERVIEW  p{
+        padding:0 50px 0 0px;
+        color:red
+    }
+    .second_fights .highlights h4{
+        color:red;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 40px 40px 70px 40px;
+    }
+    .second_fights .highlights p{
+        color:#000;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 21px;
+        padding:0 100px 0 0px;
+        line-height: .9;
+        width:300px;
+    }
+}
+
+/* ***************************************************************************6-next_fights************************************************************** */
+.next_fights{
+    margin-top:100px;
+    display:flex;
+    justify-content:space-between;
+}
+.next_fights img{
+    width:100%;
+    height:auto;
+}
+.next_fights div{
+    width:30%;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 20px;
+    
+}
+.next_fights div h5,.next_fights div h2,.next_fights div h3,.next_fights div h4{
+    text-align:center;
+}
+.next_fights div h5{
+    color:red;
+    font-size: 13px;
+    margin-top:20px;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.next_fights div h2{
+    color:black;
+    font-size: 20px;
+    margin-top:20px;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.next_fights div h3{
+    color:#585b63;
+    font-size: 11px;
+    margin-top:20px;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.next_fights div h4{
+    color:black;
+    font-size: 13px;
+    padding-top:10px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-bottom: 10px;
+    cursor: pointer;
+    width:150px;
+    margin:auto;
+}
+.next_fights div h4:hover{
+    border-bottom: 3px solid red;
+}
+
+@media(max-width:1200px){
+    .next_fights{
+        flex-direction: column;
+    }
+    .next_fights div{
+        width:100%;
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
+    }
+}
+
+
+
+/* ***************************************************************************7-footer************************************************************** */
+
+footer{
+    margin-top:100px;
+    background-color: #000;
+    width:100%;
+    padding-bottom: 100px;
+   
+    
+    
+}
+footer .footer_items{
+    display:flex;
+    justify-content: space-between;
+    align-items: center
+}
+footer .footer_logo{
+    display:flex;
+    align-items: center
+}
+footer .footer_logo p:nth-of-type(1) {
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    
+}
+footer .footer_logo p:nth-of-type(2) {
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left:15px;
+   
+}
+footer .footer_logo p:nth-of-type(2) .caret_icon{
+    margin-left:8px;
+    
+}
+
+    
+
+footer .footer_items .myitems{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+footer .footer_items .myitems ul{
+    list-style:none;
+    
+}
+
+footer .footer_items .myitems ul li:nth-of-type(1){
+    color:#fff;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+footer .footer_items .myitems ul li{
+    color: #585b63;
+    text-transform: capitalize;
+  
+}
+footer .footer_items .myitems ul li:hover{
+    color:#fff;
+    cursor: pointer;
+}
+
+footer h4{
+    color:#585b63;
+    font-size: 1.1rem;
+    margin-top: 150px;
+}
+
+
+@media(max-width:576px){
+    footer .footer_items{
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    footer .footer_items .myitems{
+        flex-wrap: wrap;
+    }
+    footer .footer_items .myitems ul{
+        list-style:none;
+        margin-top: 20px;
+        
+    }
+    footer h4{
+        margin-top: 100px;
+    }
+}
+
+@media(min-width:576px) and (max-width:776px){
+    footer .footer_items{
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    footer .footer_items .myitems{
+        flex-wrap: wrap;
+    }
+    footer .footer_items .myitems ul{
+        list-style:none;
+        margin-top: 20px;
+        
+    }
+    footer h4{
+        margin-top: 100px;
+    }
+}
+@media(min-width:776px) and (max-width:992px){
+    footer .footer_items{
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    footer .footer_items .myitems{
+        flex-wrap: wrap;
+    }
+    footer .footer_items .myitems ul{
+        list-style:none;
+        margin-top: 20px;
+        
+    }
+    footer h4{
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
